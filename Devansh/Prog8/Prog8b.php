@@ -46,6 +46,7 @@
 					// Check equal dimensions
 					if($cols1 != $cols2 || count($rows1) != count($rows2)) {
 						$valid = 1;
+						$content = $content."<br>Matrices are not of equal dimensions.<br>";
 					}
 				}
 
@@ -70,12 +71,14 @@
 			}
 		?>
 		<form method="POST" action="#">
-			<textarea name="mat1" required><?php if(isset($_POST['submit'])) { for($i = 0; $i < count($rows1); $i++) { echo trim(preg_replace('/\s+/', ' ', $rows1[$i])); printf("\n"); } } ?></textarea> +
-			<textarea name="mat2" required><?php if(isset($_POST['submit'])) { for($i = 0; $i < count($rows2); $i++) { echo trim(preg_replace('/\s+/', ' ', $rows2[$i])); printf("\n"); } } ?></textarea><br>
+			<textarea name="mat1" required><?php if(isset($_POST['submit'])) { for($i = 0; $i < count($rows1); $i++) { echo trim(preg_replace('/\s+/', ' ', $rows1[$i])); if($i != count($rows1) - 1) { printf("\n"); } } } ?></textarea> +
+			<textarea name="mat2" required><?php if(isset($_POST['submit'])) { for($i = 0; $i < count($rows2); $i++) { echo trim(preg_replace('/\s+/', ' ', $rows2[$i])); if($i != count($rows2) - 1) { printf("\n"); } } } ?></textarea><br>
 			<button type="submit" name="submit" value="Add">Add</button>
 		</form>
 		<?php
-			echo $content;
+			if(isset($_POST['submit'])) {
+				echo $content;
+			}
 		?>
 	</body>
 </html>
