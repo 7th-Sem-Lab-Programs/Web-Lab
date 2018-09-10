@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<title> Program 8a </title>
+		<title> Calculator </title>
 	</head>
 	<body>
 		<?php
