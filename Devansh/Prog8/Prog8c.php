@@ -49,7 +49,9 @@
             <button type="submit" name="submit" value="Transpose">Transpose</button>
         </form>
         <?php
-            echo $content;
+            if(isset($_POST['submit'])) {
+                echo $content;
+            }
         ?>
     </body>
 </html>
