@@ -1,0 +1,58 @@
+<html>
+	<head>
+		<title>JS Function</title>
+		<style>
+			h1{
+				color: maroon;
+			}
+			h2{
+				color: blue;
+			}
+		</style>
+		<script>
+			function convertTo(str){
+				if(str == (parseInt(str)))
+					result.innerHTML = "Reverse of "+str+" is "+str.split("").reverse().join("");
+				else {
+					var res ="The String is "+str+"<br>";
+					var flag=0;
+					for(var i=0;i<str.length;i++){
+						switch(str.charAt(i)){
+							case 'A' :
+							case 'a' :
+							case 'E' :
+							case 'e' :
+							case 'I' :
+							case 'i' :
+							case 'O' :
+							case 'o' :
+							case 'u' :
+							case 'U' : flag=1;break;
+						}
+						if(flag==1){
+							res +="The leftmost vowel is "+str.charAt(i)+".<br>It is at position "+(i+1)+".<br>";
+							break;
+						}
+					}
+					if(flag==0)
+						res +="There is no vowel in String.<br>";
+					result.innerHTML=res;
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<h1>JS to</h1>
+		<h2>
+			<ol>
+				<li>Find position of left most vowel in string, OR</li>
+				<li>Print number in reverse order.</li>
+			</ol>
+		</h2>
+		<hr>
+		<br>
+		Enter String/Number : <input type="text" id="id1" onblur="convertTo(this.value);">
+		<h1>Result</h1><br>
+		<p id="result"></p>
+	</body>
+</html>

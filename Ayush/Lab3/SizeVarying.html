@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<title>Automaitic Varying of Text Size</title>
+		<script>
+			var c=0,t1;
+			function start(){
+				t1=window.setInterval("incr()",100);
+			}
+			function incr(){
+				c+=1;
+				tab.innerHTML="TEXT-GROWING: "+c+" px";
+				tab.style.fontSize=c+"px";
+				tab.style.color="red";
+				if(c>=50){
+					window.clearInterval(t1);
+					alert("Done till 50! Press Ok to Shrink");
+					t1=window.setInterval("decr()",100);
+				}
+			}
+			function decr(){
+				c-=1;
+				tab.innerHTML="TEXT-SHRINKING: "+c+" px";
+				tab.style.fontSize=c+"px";
+				tab.style.color="blue";
+				if(c<5)
+					window.clearInterval(t1);
+			}
+		</script>
+	</head>
+	<body onload="start();">
+		<p id="tab"></p>
+	</body>
+</html>

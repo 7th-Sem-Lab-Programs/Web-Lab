@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<title>Square and Cube table</title>
+		<style>
+			table {
+				border: 2px solid black;
+				border-collapse: collapse;
+			}
+			th, td {
+				border: 1px solid red;
+				padding: 5px;
+				text-align: center;
+			}
+			h2 {
+				color: red;
+				text-align: center;
+			}
+		</style>
+		<script>
+			function sqrcub() {
+				var result = "<table><tr><th>Number</th><th>Square</th><th>Cube</th></tr>";
+				for(var i=0;i<=10;++i)
+					result += "<tr><td>"+i+"</td><td>"+(i*i)+"</td><td>"+(i*i*i)+"</td></tr>";
+				result+="</table>"
+				tab.innerHTML=result;	
+			}
+		</script>
+	</head>
+	<body onload="sqrcub();">
+		<h2>Square and Cube Table</h2>
+		<p id="tab"></p>
+	</body>
+</html>

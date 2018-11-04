@@ -1,0 +1,32 @@
+<head>
+	<title>JS Calculator</title>
+</head>
+<body>
+<h1>JS Calculator</h1>
+<table>
+<tr><td>Enter the first number</td><td><input type="number" id="num1"/></td></tr>
+<tr><td>Enter the second number</td><td><input type="number" id="num2"/></td></tr>
+</table>
+<button value="+" onclick="opr(this.value);">+</button>
+<button value="-" onclick="opr(this.value);">-</button>
+<button value="*" onclick="opr(this.value);">*</button>
+<button value="/" onclick="opr(this.value);">/</button><br><br>
+Result : <input type="number" id="res"/><br><br>
+<script>
+	function opr(op) {
+		var n1=Number(num1.value);
+		var n2=Number(num2.value);
+		switch(op){
+			case '+' : res.value=n1+n2;
+				   break;
+			case '-' : res.value=n1-n2;
+				   break;
+			case '*' : res.value=n1*n2;
+				   break;
+			case '/' : res.value=n1/n2;
+				   break;
+		}
+	}
+</script>
+</body>
+

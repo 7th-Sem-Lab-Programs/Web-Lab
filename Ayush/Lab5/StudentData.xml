@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="style.css"?>
+
+<STUDENT_DATA>
+	<!--<STUDENT>
+		<USN></USN>
+		<NAME></NAME>
+		<COLLEGE></COLLEGE>
+		<JOINING></JOINING>
+		<BRANCH></BRANCH>
+		<EMAIL></EMAIL>
+	</STUDENT>-->
+	<STUDENT>
+		<USN>1PE15CS033</USN>
+		<NAME>Ayush Agrawal</NAME>
+		<COLLEGE>PESIT-South Campus</COLLEGE>
+		<JOINING>2015</JOINING>
+		<BRANCH>Computer Science</BRANCH>
+		<EMAIL>ayushmr108@gmail.com</EMAIL>
+	</STUDENT>
+	<STUDENT>
+		<USN>1PE15CS048</USN>
+		<NAME>Devansh Sharma</NAME>
+		<COLLEGE>PES University</COLLEGE>
+		<JOINING>2015</JOINING>
+		<BRANCH>Computer Science</BRANCH>
+		<EMAIL>devansh.sharma@live.com</EMAIL>
+	</STUDENT>
+	<STUDENT>
+		<USN>1PE15CS051</USN>
+		<NAME>Divyaksh Shukla</NAME>
+		<COLLEGE>M.S. Ramaiah</COLLEGE>
+		<JOINING>2015</JOINING>
+		<BRANCH>Computer Science</BRANCH>
+		<EMAIL>divyaksh.shukla@gmail.com</EMAIL>
+	</STUDENT>
+	<STUDENT>
+		<USN>1PE15CS034</USN>
+		<NAME>Ayush Singhal</NAME>
+		<COLLEGE>PESIT-South Campus</COLLEGE>
+		<JOINING>2015</JOINING>
+		<BRANCH>Computer Science</BRANCH>
+		<EMAIL>ayush.singhal@email.com</EMAIL>
+	</STUDENT>
+	<STUDENT>
+		<USN>1PE15ME049</USN>
+		<NAME>Dipu Dipanshu</NAME>
+		<COLLEGE>PESIT-South Campus</COLLEGE>
+		<JOINING>2015</JOINING>
+		<BRANCH>Mechanical</BRANCH>
+		<EMAIL>dipu.dipanshu@email.com</EMAIL>
+	</STUDENT>
+</STUDENT_DATA>
+
